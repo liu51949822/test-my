@@ -1,25 +1,25 @@
 function  prints(){
 	setTimeout("prints()",1000 );
-	var iDays = "2021-11-27"
-	var date1= '2021/11/27 21:10:00';  //¿ªÊ¼Ê±¼ä
-       var date2 = new Date();    //½áÊøÊ±¼ä
-       var date3 = date2.getTime() - new Date(date1).getTime();   //Ê±¼ä²îµÄºÁÃëÊı     
+	var iDays = "2021-10-07"
+	var date1= '2021/10/07 21:10:00';  //å¼€å§‹æ—¶é—´
+       var date2 = new Date();    //ç»“æŸæ—¶é—´
+       var date3 = date2.getTime() - new Date(date1).getTime();   //æ—¶é—´å·®çš„æ¯«ç§’æ•°     
  
        //------------------------------
  
-       //¼ÆËã³öÏà²îÌìÊı
+       //è®¡ç®—å‡ºç›¸å·®å¤©æ•°
        var days=Math.floor(date3/(24*3600*1000))
  
-       //¼ÆËã³öĞ¡Ê±Êı
+       //è®¡ç®—å‡ºå°æ—¶æ•°
  
-       var leave1=date2%(24*3600*1000)    //¼ÆËãÌìÊıºóÊ£ÓàµÄºÁÃëÊı
+       var leave1=date2%(24*3600*1000)    //è®¡ç®—å¤©æ•°åå‰©ä½™çš„æ¯«ç§’æ•°
        var hours=Math.floor(leave1/(3600*1000))
-       //¼ÆËãÏà²î·ÖÖÓÊı
-       // var leave2=leave1%(3600*1000)        //¼ÆËãĞ¡Ê±ÊıºóÊ£ÓàµÄºÁÃëÊı
+       //è®¡ç®—ç›¸å·®åˆ†é’Ÿæ•°
+       // var leave2=leave1%(3600*1000)        //è®¡ç®—å°æ—¶æ•°åå‰©ä½™çš„æ¯«ç§’æ•°
 	   var leave2=date2%(3600*1000)
        var minutes=Math.floor(leave2/(60*1000))
-       //¼ÆËãÏà²îÃëÊı
-       // var leave3=leave2%(60*1000)      //¼ÆËã·ÖÖÓÊıºóÊ£ÓàµÄºÁÃëÊı
+       //è®¡ç®—ç›¸å·®ç§’æ•°
+       // var leave3=leave2%(60*1000)      //è®¡ç®—åˆ†é’Ÿæ•°åå‰©ä½™çš„æ¯«ç§’æ•°
 	   var leave3=date2%(60*1000) 
        var seconds=Math.round(leave3/1000)
 	   var back = days+"\u5929"+hours+"\u5c0f\u65f6"+minutes+"\u5206\u949f"+seconds+"\u79d2"
