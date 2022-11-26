@@ -1,7 +1,7 @@
 function  prints(){
 	setTimeout("prints()",1000 );
 	var iDays = "2022-11-25"
-	var date1= '2021/11/25 11:30:00';  //开始时间
+	var date1= '2022/11/25 11:30:00';  //开始时间
        var date2 = new Date();    //结束时间
        var date3 = date2.getTime() - new Date(date1).getTime();   //时间差的毫秒数     
  
