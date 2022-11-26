@@ -1,5 +1,5 @@
 function  prints(){
-	setTimeout("prints()",1000 );
+	setTimeout("prints()",800 );
 	var iDays = "2022-11-25"
 	var date1= '2022/11/25 11:30:00';  //开始时间
        var date2 = new Date();    //结束时间
